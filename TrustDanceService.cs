@@ -19,7 +19,7 @@ namespace TrustDance
             startOptions.Urls.Add("https://+:443");
             webApp = WebApp.Start<Startup>(startOptions);
 
-            Process.Start("http://trust.dance"); // Launch the browser.
+            //Process.Start("http://trust.dance"); // Launch the browser.
         }
 
 
