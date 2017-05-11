@@ -27,9 +27,23 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/">Trustchain</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Home</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/api.htm">API</a>
+                    </li>
+                    <li>
+                        <a href="/about.htm">About</a>
+                    </li>
+                </ul>
             </div><!--/.navbar-collapse -->
         </div>
     </nav>
@@ -38,97 +52,109 @@
     <div class="jumbotron">
         <div class="container">
             <h1>Trustchain</h1>
-            <p>Decentrialized Trust System</p>
+            <p>Decentrialized Trustchain Service System</p>
             <!--<p><a class="btn btn-primary btn-lg" href="http://" role="button">Learn more &raquo;</a></p>-->
         </div>
     </div>
 
     <div class="container">
-        <p>Decentrialized Trust System</p>
-        <p>Service API</p>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Url</th>
-                    <th>SSL Port</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div>Truststamp</div>
-                        <div>Time stamp server</div>
-                        <div><a href="/truststamp.htm">API</a></div>
-                    </td>
-                    <td>http://trust.dance:12600</td>
-                    <td>https://trust.dance:12700</td>
-                    <td>Offline</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>Trustbuild</div>
-                        <div>Build server</div>
-                        <div><a href="#">API</a></div>
-                    </td>
-                    <td>http://trust.dance:12601</td>
-                    <td>https://trust.dance:12701</td>
-                    <td>Offline</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>Trustgraph</div>
-                        <div>Graph server</div>
-                        <div><a href="#">API</a></div>
-                    </td>
-                    <td>http://trust.dance:12602</td>
-                    <td>https://trust.dance:12702</td>
-                    <td>Offline</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>Trustname</div>
-                        <div>Trust name server.</div>
-                        <div><a href="#">API</a></div>
-                    </td>
-                    <td>http://trust.dance:12603</td>
-                    <td>https://trust.dance:12703</td>
-                    <td>Offline</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>TrustTorrent</div>
-                        <div>Trust torrent server. Only supports Trust files.</div>
-                        <div><a href="#">API</a></div>
-                    </td>
-                    <td>http://trust.dance:12604</td>
-                    <td>https://trust.dance:12704</td>
-                    <td>Offline</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>TrustTracker</div>
-                        <div>Trust Torrent tracker server. Only supports Trust files.</div>
-                        <div><a href="#">API</a></div>
-                    </td>
-                    <td>http://trust.dance:12605</td>
-                    <td>https://trust.dance:12705</td>
-                    <td>Offline</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>With the introduction of the World Wide Web, the possibility for everybody to produce content that could potentially each anyone else became possible, however, one crucial element was digitally left behind - Trust. The reputation of a few persons could easily be manage, however for a single person to manage the reputation of many others only known loosely, becomes an exhausting task. Relying on friends and family’s trust network may help but usually they are not available at the time or do not even have the same interest sphere. Further the possibility to be anonymous and still provide content make it hard for the reader to verify if the message is authentic.</p>
+                <p>The Trustchain services will try to put back the trust system into the digital world. The idea is to make it possible for everybody to leverage the trust network of anybody else. The goal of the Trustchain system is it will be able to be used for literally anything, this includes anything from trust, security and identity.</p>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Services</p>
+            </div>
+
+            <div class="col-lg-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Url</th>
+                            <th>SSL Port</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>Truststamp</div>
+                                <div>Time stamp server</div>
+                                <div><a href="/truststamp.htm">API</a></div>
+                            </td>
+                            <td>http://trust.dance:12600</td>
+                            <td>https://trust.dance:12700</td>
+                            <td>Offline</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Trustbuild</div>
+                                <div>Build server</div>
+                                <div><a href="#">API</a></div>
+                            </td>
+                            <td>http://trust.dance:12601</td>
+                            <td>https://trust.dance:12701</td>
+                            <td>Offline</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Trustgraph</div>
+                                <div>Graph server</div>
+                                <div><a href="#">API</a></div>
+                            </td>
+                            <td>http://trust.dance:12602</td>
+                            <td>https://trust.dance:12702</td>
+                            <td>Offline</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Trustname</div>
+                                <div>Trust name server.</div>
+                                <div><a href="#">API</a></div>
+                            </td>
+                            <td>http://trust.dance:12603</td>
+                            <td>https://trust.dance:12703</td>
+                            <td>Offline</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>TrustTorrent</div>
+                                <div>Trust torrent server. Only supports Trust files.</div>
+                                <div><a href="#">API</a></div>
+                            </td>
+                            <td>http://trust.dance:12604</td>
+                            <td>https://trust.dance:12704</td>
+                            <td>Offline</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>TrustTracker</div>
+                                <div>Trust Torrent tracker server. Only supports Trust files.</div>
+                                <div><a href="#">API</a></div>
+                            </td>
+                            <td>http://trust.dance:12605</td>
+                            <td>https://trust.dance:12705</td>
+                            <td>Offline</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          </div>
         <hr>
 
         <footer>
-            <p>Trustchain - By <a href="mailto:carsten@keutmann.dk">carsten@keutmann.dk</a></p>
+            <p>Trustchain</p>
         </footer>
     </div> <!-- /container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
