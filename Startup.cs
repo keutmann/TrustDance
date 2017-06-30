@@ -13,6 +13,8 @@ namespace TrustDance
             public CustomContentTypeProvider()
             {
             }
+
+            
         }
 
         public void Configuration(IAppBuilder app)
@@ -31,7 +33,7 @@ namespace TrustDance
 
             options.StaticFileOptions.FileSystem = physicalFileSystem;
             options.StaticFileOptions.ContentTypeProvider = new CustomContentTypeProvider();
-
+            
             app.UseFileServer(options);
         }
     }
